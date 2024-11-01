@@ -2,6 +2,8 @@ import React from 'react';
 import { Tabs, TabsList, Tab } from '@mui/base';
 import { HomeRounded, FactCheckRounded, SearchRounded } from '@mui/icons-material';
 import { motion } from 'framer-motion';
+import Logo from '../../../public/logo.png';
+import Image from 'next/image';
 
 interface NavbarProps {
   value: number;
@@ -19,7 +21,9 @@ export default function Navbar({ value, onChange }: NavbarProps) {
           exit={{ opacity: 0, x: 20 }}
           transition={{ duration: 0.3 }}
         >
-          <Tab value={1} className="text-2xl md:text-3xl">Tamashiima</Tab>
+          <Tab value={1} className="text-2xl md:text-3xl">
+            <Image src={Logo.src} width={100} height={100} alt='logo'/>
+          </Tab>
         </motion.div>
 
         {/* Navigation Tabs */}
