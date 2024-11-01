@@ -25,3 +25,16 @@ body{
 .box-inside{
     @apply w-full h-auto rounded-[8px] bg-white p-4;
 }
+
+@keyframes rotate-left-right {
+    0%, 100% { transform: rotate(-45deg); }
+    50% { transform: rotate(45deg); }
+  }
+  
+  .hover-rotate {
+    transition: transform 0.9s ease-in-out;
+  }
+  
+  .hover-rotate:hover {
+    animation: rotate-left-right 0.9s ease-in-out infinite;
+  }

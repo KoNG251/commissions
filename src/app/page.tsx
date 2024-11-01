@@ -3,6 +3,7 @@ import * as React from 'react';
 import Navbar from "./components/navbar";
 import { Tabs, TabPanel } from '@mui/base';
 import { motion } from 'framer-motion';
+import Logo from '../../public/logo.png';
 
 export default function Home() {
   const [activeTab, setActiveTab] = React.useState<number>(1);
@@ -26,7 +27,7 @@ export default function Home() {
             <TabPanel value={1}>
               <div className='box-outside'>
                 <div className='box-inside'>
-                  adsfadsfadsf
+                  <h1 className='text-5xl text-bold text-center'>COMMISSION STATUS : เปิด</h1>
                 </div>
               </div>
             </TabPanel>

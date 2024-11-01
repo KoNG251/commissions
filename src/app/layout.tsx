@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Head from 'next/head';
+import fav from '../../public/logo.ico'
 
 const itim = localFont({
   src: "./fonts/Itim-Regular.woff",
@@ -20,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href={fav.src} />
+      </Head>
       <body
         className={`${itim.variable} antialiased`}
       >

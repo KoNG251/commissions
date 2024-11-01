@@ -22,7 +22,7 @@ export default function Navbar({ value, onChange }: NavbarProps) {
           transition={{ duration: 0.3 }}
         >
           <Tab value={1} className="text-2xl md:text-3xl">
-            <Image src={Logo.src} width={100} height={100} alt='logo'/>
+            <Image src={Logo.src} width={100} height={100} alt='logo' className='hover-rotate duration-300 ease-in-out'/>
           </Tab>
         </motion.div>
 
